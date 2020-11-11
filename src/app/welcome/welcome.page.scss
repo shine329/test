@@ -1,0 +1,23 @@
+ion-content{
+    --background:url('https://i.pinimg.com/originals/72/c2/89/72c2896841e0b15b0225e4b549d75fad.jpg')
+    no-repeat center center/cover ;
+
+    
+}
+h1{
+    
+    position: relative;
+    color: #fff;
+    top: 45%;
+    right: 25%;
+    left: 8%;
+    font-size: 35px;
+    margin: auto;
+
+
+    ion-button{
+        size: 50px;
+        position: relative;
+        
+    }
+}

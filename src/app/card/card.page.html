@@ -1,0 +1,105 @@
+
+
+<ion-content>
+<h3 align="center">TODAY CLASSES</h3>
+  <ion-slides pager='true' #slider (ionSlidesDidLoad)="sliderload(slider)"[options]="slideOpts">
+  
+    <ion-slide>
+      
+      <ion-card [routerLink]="['/table']">
+        <img src="https://cdn.lynda.com/course/196583/196583-637274008157865211-16x9.jpg">
+        <ion-card-header>
+          <ion-card-subtitle>
+            PHYSICS
+          </ion-card-subtitle>
+        </ion-card-header>
+      </ion-card >
+    </ion-slide>
+    <ion-slide>
+      <ion-card [routerLink]="['/table']">
+        <img src="https://static.coindesk.com/wp-content/uploads/2017/04/analysis-charts-e1493382374824.jpg">
+        <ion-card-header>
+          <ion-card-subtitle>
+            CHEMISTRY
+          
+          </ion-card-subtitle>
+          
+        </ion-card-header>
+      </ion-card >
+    </ion-slide>
+    <ion-slide>
+      <ion-card [routerLink]="['/table']">
+        <img src="https://miro.medium.com/max/820/1*TKRMzr-NJwYdrYi3AnJPXA.jpeg">
+        <ion-card-header>
+          <ion-card-subtitle>
+            BIOLOGY
+          
+          </ion-card-subtitle>
+        </ion-card-header>
+      </ion-card>
+    </ion-slide>
+  </ion-slides>
+
+  <ion-card [routerLink]="['/table']">
+    <ion-item>
+      <ion-icon name="school-outline" slot="start"></ion-icon>
+      <ion-label>Yesterday classes</ion-label>
+      <ion-button fill="outline" slot="end">View</ion-button>
+    </ion-item>
+  
+    <ion-card-content>
+      <img src="https://www.yottavolt.com/wp-content/uploads/2019/08/physics.png">
+      PHYSICS
+    </ion-card-content>
+  </ion-card>
+  <ion-card [routerLink]="['/table']">
+    <ion-item>
+      <ion-icon name="school-outline" slot="start"></ion-icon>
+      <ion-label>Yesterday classes</ion-label>
+      <ion-button fill="outline" slot="end">View</ion-button>
+    </ion-item>
+  
+    <ion-card-content>
+      <img src="https://jobs.newscientist.com/getasset/384aa208-c4cf-453f-924a-1cd7b7854eda/">
+    CHEMISTRY
+    </ion-card-content>
+  </ion-card>
+  <ion-card [routerLink]="['/table']">
+    <ion-item>
+      <ion-icon name="school-outline" slot="start"></ion-icon>
+      <ion-label>Yesterday classes</ion-label>
+      <ion-button fill="outline" slot="end">View</ion-button>
+    </ion-item>
+  
+    <ion-card-content>
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcREC03nb6QApKBZFARLB50b0kqsIlVpBsoOuA&usqp=CAU">
+    BIOLOGY
+    </ion-card-content>
+  </ion-card>
+
+
+
+  <span></span>
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button >
+      <ion-icon name="share"></ion-icon>
+    </ion-fab-button>
+    
+    <ion-fab-list side="start">
+      <ion-fab-button [routerLink]="['/details']" color="dark"><ion-icon name="school-outline"></ion-icon></ion-fab-button>
+    </ion-fab-list>
+    <ion-fab-list side="top">
+      <ion-fab-button (click)="presentActionSheet()" color="dark"><ion-icon name="settings"></ion-icon></ion-fab-button>
+    </ion-fab-list>
+   
+  </ion-fab>
+  
+
+
+
+  </ion-content>
+
+
+
+
+  

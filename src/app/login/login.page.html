@@ -1,0 +1,51 @@
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+
+
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <div class="back-circle"></div>
+    <ion-title class="ion-text-center custom-font">
+      sign up
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <svg class="back-blob" viewBox="0 0 350 200" xmlns="http://www.w3.org/2000/svg">
+    <path fill="#FF0066" d="M49.6,-15.1C56.2,4.2,47.9,29.4,29.9,43C11.8,56.6,-16.1,58.6,-38.5,44.4C-60.9,30.2,-77.8,-0.3,-70.5,-20.6C-63.2,-40.9,-31.6,-51,-5,-49.4C21.5,-47.7,43,-34.3,49.6,-15.1Z" transform="translate(100 100)" />
+  </svg>
+  
+  <form class="ion-padding">
+    
+      <div class="wrap-input">
+              <ion-input class="input" type="text" [(ngModel)]="user" name="user" placeholder="Email" required></ion-input>
+            </div>
+
+  
+
+            <div class="wrap-input">
+      <ion-input class="input" type="password" [(ngModel)]="password" name="password" placeholder="Password" required></ion-input>
+    </div>
+
+    <ion-row>
+      <ion-col>
+        <ion-button  color="danger" expand="block" (click)="log()">Login</ion-button>
+        <ion-button [routerLink]="['/register']" expand="block" class="small-text">Register</ion-button>
+      </ion-col>
+    </ion-row>
+  </form>
+</ion-content>
+
+<ion-footer class="ion-no-border">
+  <ion-toolbar>
+    
+    <p class="ion-text-center custom-font">
+      Already have an account?
+      <button shape="round" fill="outline" colur="primary" size="small" [routerLink]="['/register']">Register</button>
+      </p>
+    
+  </ion-toolbar>
+</ion-footer>
+
+
+

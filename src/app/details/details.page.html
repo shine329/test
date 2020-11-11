@@ -1,0 +1,55 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Class Details</ion-title>
+    <ion-back-button slot="start"></ion-back-button>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-slides pager='true' #slider (ionSlidesDidLoad)="sliderload(slider)"[options]="slideOpts">
+    <ion-slide>
+      <ion-card (click)="presentActionSheet()">
+        <img src="https://www.macworld.co.uk/cmsdata/features/3583514/iPhone-settings_thumb900_1-1.jpg">
+        <ion-card-header>
+          <ion-card-subtitle>
+            Settings
+          </ion-card-subtitle>
+        </ion-card-header>
+      </ion-card >
+    </ion-slide>
+    <ion-slide>
+      <ion-card>
+        <img src="https://static.coindesk.com/wp-content/uploads/2017/04/analysis-charts-e1493382374824.jpg">
+        <ion-card-header>
+          <ion-card-subtitle>
+          Class Details
+          </ion-card-subtitle>
+          
+        </ion-card-header>
+      </ion-card >
+    </ion-slide>
+    <ion-slide>
+      <ion-card (click)="presentActionSheet()">
+        <img src="https://miro.medium.com/max/820/1*TKRMzr-NJwYdrYi3AnJPXA.jpeg">
+        <ion-card-header>
+          <ion-card-subtitle>
+            Attendance
+          </ion-card-subtitle>
+        </ion-card-header>
+      </ion-card>
+    </ion-slide>
+  </ion-slides>
+
+
+
+</ion-content>
+<ion-footer class="ion-no-border">
+  <ion-toolbar>
+    
+    <p class="ion-text-center custom-font">
+      Learn And Grow
+      </p>
+      <ion-button [routerLink]="['/login']" slot="center"><ion-icon slot="end" name="log-out"></ion-icon>Logout</ion-button>
+    
+  </ion-toolbar>
+</ion-footer>
